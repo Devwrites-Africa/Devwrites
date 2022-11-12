@@ -81,9 +81,11 @@
 .footer-link {
     max-width: 500px;
     display: grid;
-    grid-gap: 30px;
+    column-gap: 50px;
+    row-gap: 30px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
+    margin-right: 50px;
 }
 .footer-link > a {
     text-decoration: none;
