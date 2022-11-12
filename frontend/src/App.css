@@ -3,6 +3,10 @@
     src: url(/public/Fonts/Inter/Inter-SemiBold.ttf);
 }
 
+:root {
+    --lightgreen: #2DB68F;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +18,17 @@
 }
 
 .navLink-container {
-    margin: 0 auto;
+    /* width: 100%; */
     font-family: 'Inter';
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navLink-container > a {
-    text-decoration: none;
     font-size: 1.2rem;
     margin: 0 30px;
     color: black;
@@ -33,6 +42,11 @@
 }
 
 
+/* DRAWER */
+
+.drawer-text {
+    margin-top: auto;
+}
 
 /* FOOTER */
 

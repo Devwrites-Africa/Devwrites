@@ -5,10 +5,12 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
+  console.log(window.innerWidth)
   return (
     <div className="App">
       <Navbar />
-      <Footer />
+      {/* <HomePage />
+      <Footer /> */}
     </div>
   );
 }

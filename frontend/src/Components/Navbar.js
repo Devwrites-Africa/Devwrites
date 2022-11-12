@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import DrawerComponent from "./DrawerComponent";
 import { 
     AppBar, 
     Tab, 
     Tabs, 
     Toolbar, 
     Button,
+    useTheme,
+    useMediaQuery
 } from "@mui/material";
 
 
 const Navbar = ()=> {
+    const theme = useTheme();
+    const mobileView = useMediaQuery(theme.breakpoints.down('md'))
+    // console.log(theme)
 
     const styles = {
         contactBtn: {
@@ -34,21 +40,32 @@ const Navbar = ()=> {
             >
                 <Toolbar>
                     <img src="./Images/Logo.png" alt="logo" className='logo' />
+                        { mobileView ? (
+                            <DrawerComponent />
+                        ) : (
+                            <>
+                                <div className='navLink-container'>
+                                    <Link to='' className="active-link">Home</Link>
+                                    <Link to=''>About</Link>
+                                    <Link to=''>Blog</Link>
+                                    <Link to=''>Programs</Link>
+                                </div>
 
-                    <div className='navLink-container'>
-                        <Link to='' className="active-link">Home</Link>
-                        <Link to=''>About</Link>
-                        <Link to=''>Blog</Link>
-                        <Link to=''>Programs</Link>
-                    </div>
-
-                    <Button
-                        sx={styles.contactBtn} 
-                        variant="contained"
-                        className="contact-btn"
-                    >
-                        Contact Us
-                    </Button>
+                                <Link to='' className="contact-btn">
+                                    <Button
+                                        sx={styles.contactBtn} 
+                                        variant="contained"
+                                    >
+                                        Contact Us
+                                    </Button>
+                                </Link>
+                            </>
+                            
+                        )}
+                        
+                    
+                    
+                    
                 </Toolbar>
             </AppBar>
         </div>
