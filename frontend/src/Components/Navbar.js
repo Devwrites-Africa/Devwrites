@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { 
     AppBar, 
     Tab, 
@@ -26,29 +26,32 @@ const Navbar = ()=> {
     }
     
     return (
-        <AppBar 
-            sx={{background: '#F5F5F5'}}
-            elevation={0}
-        >
-            <Toolbar>
-                <img src="./Images/Logo.png" alt="logo" className='logo' />
+        <div >
+            <AppBar
+                sx={{background: '#F5F5F5'}}
+                elevation={0}
+                position='relative'
+            >
+                <Toolbar>
+                    <img src="./Images/Logo.png" alt="logo" className='logo' />
 
-                <div className='navLink-container'>
-                    <Link to='' className="active-link">Home</Link>
-                    <Link to=''>About</Link>
-                    <Link to=''>Blog</Link>
-                    <Link to=''>Programs</Link>
-                </div>
+                    <div className='navLink-container'>
+                        <Link to='' className="active-link">Home</Link>
+                        <Link to=''>About</Link>
+                        <Link to=''>Blog</Link>
+                        <Link to=''>Programs</Link>
+                    </div>
 
-                <Button
-                    sx={styles.contactBtn} 
-                    variant="contained"
-                    className="contact-btn"
-                >
-                    Contact Us
-                </Button>
-            </Toolbar>
-        </AppBar>
+                    <Button
+                        sx={styles.contactBtn} 
+                        variant="contained"
+                        className="contact-btn"
+                    >
+                        Contact Us
+                    </Button>
+                </Toolbar>
+            </AppBar>
+        </div>
     )
 }
 
