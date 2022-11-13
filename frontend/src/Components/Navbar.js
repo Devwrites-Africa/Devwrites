@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import DrawerComponent from "./DrawerComponent";
 import { 
     AppBar, 
-    Tab, 
-    Tabs, 
     Toolbar, 
     Button,
     useTheme,
@@ -15,7 +13,6 @@ import {
 const Navbar = ()=> {
     const theme = useTheme();
     const mobileView = useMediaQuery(theme.breakpoints.down('md'))
-    // console.log(theme)
 
     const styles = {
         contactBtn: {

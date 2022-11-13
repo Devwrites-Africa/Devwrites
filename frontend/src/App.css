@@ -5,6 +5,7 @@
 
 :root {
     --lightgreen: #2DB68F;
+    --white: #fff;
 }
 
 * {
@@ -15,12 +16,13 @@
 
 .logo {
     height: 80px;
+    margin-right: auto;
 }
 
 .navLink-container {
-    /* width: 100%; */
     font-family: 'Inter';
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-right: auto;
     text-align: center;
 }
 
@@ -44,8 +46,23 @@ a {
 
 /* DRAWER */
 
+.drawer-link {
+    text-decoration: none;
+    font-family: 'Inter';
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.active-drawer-link {
+    color: var(--lightgreen);
+}
+
 .drawer-text {
     margin-top: auto;
+    color: var(--white);
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 0.7rem;
 }
 
 /* FOOTER */

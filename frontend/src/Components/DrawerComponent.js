@@ -11,6 +11,23 @@ import { Link } from 'react-router-dom';
 
 
 const DrawerComponent = ()=> {
+
+    const styles = {
+        drawer: {
+            backgroundColor: 'rgba(0,0,0,0.8)'
+        },
+        links: {
+            borderBottom: '1px solid white',
+            padding: '20px 0px',
+        },
+        contactLink: {
+            marginTop: '20px',
+            padding: '0px'
+        },
+        iconBtn: {
+            color: 'black',
+        }
+    }
     const [openDrawer, setOpenDrawer] = useState(false);
 
     const handleDrawerChange = ()=> {
@@ -18,45 +35,54 @@ const DrawerComponent = ()=> {
     }
 
     return (
-        <div>
+        <div className="drawer-container">
             <Drawer 
                 open={openDrawer} 
                 onClose={handleDrawerChange}
+                PaperProps = {{
+                    sx: {
+                        backgroundColor: 'black',
+                        width: '350px',
+                        padding: '20px 50px',                    
+                    },
+                    elevation: 20
+                }}
+                sx={styles.drawer}
             >
                 <List>
-                    <ListItem>
+                    <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to=''>Home</Link>
+                            <Link to='' className="drawer-link active-drawer-link">Home</Link>
                         </ListItemText>
                     </ListItem>
-                    <ListItem>
+                    <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to=''>About</Link>
+                            <Link to='' className="drawer-link">About</Link>
                         </ListItemText>
                     </ListItem>
-                    <ListItem>
+                    <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to=''>Blog</Link>
+                            <Link to='' className="drawer-link">Blog</Link>
                         </ListItemText>
                     </ListItem>
-                    <ListItem>
+                    <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to=''>Programs</Link>
+                            <Link to='' className="drawer-link">Programs</Link>
                         </ListItemText>
                     </ListItem>
-                    <ListItem>
+                    <ListItem sx={styles.contactLink}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to=''>Contact Us</Link>
+                            <Link to='' className="drawer-link ">Contact Us</Link>
                         </ListItemText>
                     </ListItem>
                 </List>
-                <p className="drawer-text">All right Reserved</p>
+                <p className="drawer-text">All Rights Reserved. Devwrites Africa</p>
             </Drawer>
             <IconButton
-                sx={{color: 'black', marginLeft: 'auto'}}
+                sx={styles.iconBtn}
                 onClick={()=> setOpenDrawer(!openDrawer)}
             >
-                <MenuIcon />
+                <MenuIcon sx={{fontSize: '40px'}} />
             </IconButton>
         </div>
     )
