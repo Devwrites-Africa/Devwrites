@@ -42,7 +42,7 @@ const DrawerComponent = ()=> {
                 PaperProps = {{
                     sx: {
                         backgroundColor: 'black',
-                        width: '350px',
+                        width: '300px',
                         padding: '20px 50px',                    
                     },
                     elevation: 20
