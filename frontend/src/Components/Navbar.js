@@ -27,29 +27,35 @@ const Navbar = ()=> {
     
     return (
         <AppBar 
-            sx={{background: '#F5F5F5'}}
-            elevation={0}
+            sx={{background: '#F5F5F5', height:'5rem'}}
+             elevation={0}
         >
-            <Toolbar>
-                <img src="./Images/Logo.png" alt="logo" className='logo' />
+           
+               <Toolbar>
+               <img src="./Images/Logo.png" alt="logo" className='logo' />
 
-                <div className='navLink-container'>
-                    <Link to='' className="active-link">Home</Link>
-                    <Link to=''>About</Link>
-                    <Link to=''>Blog</Link>
-                    <Link to=''>Programs</Link>
-                </div>
+               <div className='navLink-container'>
+                   <Link to='' className="active-link">Home</Link>
+                   <Link to='/about'>About</Link>
+                   <Link to='/blog'>Blog</Link>
+                   <Link to='/program'>Programs</Link>
+               </div>
 
-                <Button
-                    sx={styles.contactBtn} 
-                    variant="contained"
-                    className="contact-btn"
-                >
-                    Contact Us
-                </Button>
-            </Toolbar>
+               <Button
+                   sx={styles.contactBtn} 
+                   variant="contained"
+                   className="contact-btn"
+               >
+                   Contact Us
+               </Button>
+           </Toolbar>
+           
         </AppBar>
     )
+    
+
+    
+
 }
 
 export default Navbar
