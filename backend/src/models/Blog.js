@@ -2,7 +2,6 @@ const { model, Schema } = require('mongoose');
 const Author = require('./Author');
 
 const MODEL_NAME = 'Blog';
-
 const schema = new Schema(
   {
     title: String,
@@ -10,8 +9,8 @@ const schema = new Schema(
     content: String,
     author: {
       type: Schema.Types.ObjectId,
-      ref: Author,
       required: true,
+      ref: Author,
     },
     keywords: [String],
     cover: String,
