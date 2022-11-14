@@ -57,7 +57,7 @@ const DrawerComponent = ()=> {
                     </ListItem>
                     <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
-                            <Link to='' className="drawer-link">About</Link>
+                            <Link to='/about' className="drawer-link">About</Link>
                         </ListItemText>
                     </ListItem>
                     <ListItem sx={styles.links}>

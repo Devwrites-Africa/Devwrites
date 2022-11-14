@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import { BsDash } from "react-icons/bs";
 import "./About.css";
@@ -21,7 +21,6 @@ const About = () => {
    };
    return (
       <>
-         <Navbar />
          <div className="header">
             <Divider variant="hr" sx={styles.divider} />
             <header className="header-content">
@@ -188,7 +187,6 @@ const About = () => {
                </Stack>
             </Stack>
          </section>
-         <Footer />
       </>
    );
 };

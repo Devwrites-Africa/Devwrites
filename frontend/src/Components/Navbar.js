@@ -1,7 +1,16 @@
 
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { AppBar, Tab, Tabs, Toolbar, Button } from "@mui/material";
+import DrawerComponent from "./DrawerComponent";
+import { 
+    AppBar, 
+    Tab, 
+    Tabs, 
+    Toolbar, 
+    Button,
+    useTheme,
+    useMediaQuery
+} from "@mui/material";
 
 const Navbar = ()=> {
     const theme = useTheme();
@@ -37,7 +46,7 @@ const Navbar = ()=> {
                             <>
                                 <div className='navLink-container'>
                                     <Link to='' className="active-link">Home</Link>
-                                    <Link to=''>About</Link>
+                                    <Link to='/about'>About</Link>
                                     <Link to=''>Blog</Link>
                                     <Link to=''>Programs</Link>
                                 </div>
