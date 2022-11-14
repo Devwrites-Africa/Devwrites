@@ -43,7 +43,7 @@ const DrawerComponent = ()=> {
                     sx: {
                         backgroundColor: 'black',
                         width: '300px',
-                        padding: '20px 50px',                    
+                        padding: '20px 50px',                 
                     },
                     elevation: 20
                 }}

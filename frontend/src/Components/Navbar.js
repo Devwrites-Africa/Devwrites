@@ -20,6 +20,7 @@ const Navbar = ()=> {
                 background: '#2DB68F',
                 boxShadow: '0'
             },
+            
             background: '#2DB68F',
             boxShadow: '0',
             textTransform: 'capitalize',
