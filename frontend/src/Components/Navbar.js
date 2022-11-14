@@ -1,14 +1,7 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-import DrawerComponent from "./DrawerComponent";
-import { 
-    AppBar, 
-    Toolbar, 
-    Button,
-    useTheme,
-    useMediaQuery
-} from "@mui/material";
 
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { AppBar, Tab, Tabs, Toolbar, Button } from "@mui/material";
 
 const Navbar = ()=> {
     const theme = useTheme();
