@@ -10,6 +10,6 @@ module.exports.createBlog = serviceWrapper({
     // ...
   },
   async handler (params) {
-
+    return {}
   }
 })
