@@ -28,8 +28,12 @@ const HomePage = ()=> {
                     </Link>
                 </div>
                 <img 
-                    src="../images/Ellipse.png" 
+                    src="../images/Ellipse-desktop.png" 
                     className="ellipse-desktop"
+                />
+                <img 
+                    src="../images/Ellipse-mobile.png" 
+                    className="ellipse-mobile"
                 />
                 <img 
                     src="../images/young-man.png" 
@@ -50,6 +54,7 @@ const HomePage = ()=> {
             <section className="contributors-section">
 
             </section>
+            <DividerComponent />
             <Footer />
         </div>
     )
