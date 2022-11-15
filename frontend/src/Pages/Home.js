@@ -1,8 +1,10 @@
 import React from "react";
+import DividerComponent from "../Components/DividerComponent";
 
 const HomePage = ()=> {
     return (
         <div className="home-page">
+            <DividerComponent />
             <section className="landing-page">
 
             </section>

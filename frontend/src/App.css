@@ -3,6 +3,11 @@
     src: url(/public/Fonts/Inter/Inter-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url(/public/Fonts/Futura/FuturaBookItalicBT.ttf);
+}
+
 :root {
     --lightgreen: #2DB68F;
     --white: #F5F5F5;
