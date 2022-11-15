@@ -45,7 +45,7 @@ const Navbar = ()=> {
                         ) : (
                             <>
                                 <div className='navLink-container'>
-                                    <Link to='' className="active-link">Home</Link>
+                                    <Link to='/' className="active-link">Home</Link>
                                     <Link to='/about'>About</Link>
                                     <Link to=''>Blog</Link>
                                     <Link to=''>Programs</Link>

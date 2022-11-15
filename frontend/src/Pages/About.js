@@ -21,6 +21,7 @@ const About = () => {
    };
    return (
       <>
+         <Navbar />
          <div className="header">
             <Divider variant="hr" sx={styles.divider} />
             <header className="header-content">
@@ -187,6 +188,7 @@ const About = () => {
                </Stack>
             </Stack>
          </section>
+         <Footer />
       </>
    );
 };
