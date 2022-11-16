@@ -54,6 +54,7 @@ const HomePage = ()=> {
             <section className="contributors-section">
 
             </section>
+            <DividerComponent />
             <Footer />
         </div>
     )
