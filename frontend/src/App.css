@@ -3,9 +3,14 @@
     src: url(/public/Fonts/Inter/Inter-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url(/public/Fonts/Futura/FuturaBookItalicBT.ttf);
+}
+
 :root {
     --lightgreen: #2DB68F;
-    --white: #fff;
+    --white: #F5F5F5;
 }
 
 * {
@@ -21,7 +26,6 @@
 
 .navLink-container {
     font-family: 'Inter';
-    /* margin: 0 auto; */
     margin-right: auto;
     text-align: center;
 }
@@ -35,7 +39,6 @@ a {
     margin: 0 30px;
     color: black;
 }
-
 .navLink-container > .active-link {
     background-color: #D9D9D9;
     padding: 10px;
@@ -45,9 +48,7 @@ a {
 
 
 /* DRAWER */
-
 .drawer-link {
-    text-decoration: none;
     font-family: 'Inter';
     color: var(--white);
     font-size: 1.2rem;
@@ -62,71 +63,5 @@ a {
     color: var(--white);
     font-family: 'Inter';
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 12px;
 }
-
-/* FOOTER */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    background: black;
-    padding: 30px 60px;
-    font-family: 'Inter';
-    height: fit-content;
-}
-
-.footer-items {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.first-footer-container {
-    max-width: 500px;
-    margin-right: 20px;
-}
-
-.footer-logo {
-    height: 70px;
-    margin-bottom: 30px;
-}
-
-.first-footer-container > p {
-    font-size: 1rem;
-    line-height: 25px;
-    margin-bottom: 30px;
-}
-
-.social-icon-container {
-    display: flex;
-}
-.social-media {
-    font-size: 25px;
-    margin-right: 20px;
-}
-
-.footer-link {
-    max-width: 500px;
-    display: grid;
-    column-gap: 50px;
-    row-gap: 30px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    margin-right: 50px;
-}
-.footer-link > a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 600;
-}
-
-.all-right-reserved {
-    text-align: center;
-    font-size: 1rem;
-}
-
