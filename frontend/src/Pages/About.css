@@ -66,4 +66,7 @@
     .overlay-desc {
         line-height: 1.3;
     }
+    .content {
+        justify-content: center;
+    }
 }

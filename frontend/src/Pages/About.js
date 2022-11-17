@@ -7,15 +7,6 @@ import { BsDash } from "react-icons/bs";
 import "./About.css";
 
 const About = () => {
-    const styles = {
-        h1: {
-            fontweight: 800,
-            fontSize: "2rem",
-            color: "#F5F5F5",
-            paddingLeft: "2.5rem",
-            fontFamily: "Inter",
-        },
-    };
     return (
         <>
             <div className="about-page">
@@ -24,7 +15,17 @@ const About = () => {
                     <DividerComponent />
                     <header className="header-content">
                         <div className="content">
-                            <Typography variant="h1" sx={styles.h1}>
+                            <Typography
+                                variant="h1"
+                                sx={{
+                                    fontweight: 800,
+                                    fontSize: "2rem",
+                                    color: "#F5F5F5",
+                                    paddingLeft: { sm: "2.5rem", xs: 0 },
+                                    fontFamily: "Inter",
+                                    textAlign: "center",
+                                }}
+                            >
                                 About Us
                             </Typography>
                         </div>
@@ -44,17 +45,14 @@ const About = () => {
                                 sx={{
                                     width: { xs: "100%", sm: "350px" },
                                     height: 300,
-                                    background:
-                                        "linear-gradient(74.13deg, #2DB68F -6.72%, #A5DFBC 79.33%)",
+                                    background: `url("../images/friends.png")`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroudPosition: "center",
+                                    backgroundSize: "cover",
                                     borderRadius: "20px",
                                     overflow: "hidden",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
                                 }}
-                            >
-                                <Typography variant="h5">PHOTO</Typography>
-                            </Box>
+                            ></Box>
                             <Box
                                 component="div"
                                 sx={{
@@ -129,20 +127,18 @@ const About = () => {
                                 component="div"
                                 sx={{
                                     width: { xs: "100%", sm: "350px" },
-                                    height: 300,
-                                    background:
-                                        "linear-gradient(74.13deg, #2DB68F -6.72%, #A5DFBC 79.33%)",
+                                    height: 350,
+                                    background: `url("../images/man-and-woman.png")`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroudPosition: "center",
+                                    backgroundSize: "cover",
                                     borderRadius: "20px",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
+                                    overflow: "hidden",
                                     zIndex: 100,
                                     marginRight: { xs: 0, sm: "-100px" },
                                 }}
                                 className="image-box"
-                            >
-                                <Typography variant="h5">PHOTO</Typography>
-                            </Box>
+                            ></Box>
                             <Box
                                 component="div"
                                 sx={{
