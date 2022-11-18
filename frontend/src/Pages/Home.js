@@ -52,9 +52,7 @@ const HomePage = ()=> {
 
             </section>
 
-            <section className="contributors-section">
-
-            </section>
+            <DividerComponent />
             <Contributors />
             <DividerComponent />
             <Footer />
