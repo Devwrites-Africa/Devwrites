@@ -2,6 +2,7 @@ import React from "react";
 import DividerComponent from "../Components/DividerComponent";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Contributors from "../Components/Contributors";
 import { Link } from "react-router-dom";
 import { FaBookOpen, FaPenNib,  FaPrint} from 'react-icons/fa';
 
@@ -109,6 +110,7 @@ const HomePage = ()=> {
             <section className="contributors-section">
 
             </section>
+            <Contributors />
             <DividerComponent />
             <Footer />
         </div>
