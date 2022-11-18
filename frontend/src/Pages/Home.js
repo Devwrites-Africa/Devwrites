@@ -49,6 +49,9 @@ const HomePage = ()=> {
                     className="writers female-writer"
                 />
             </section>
+            <DividerComponent />
+            <Contributors />
+            <DividerComponent />
 
             {/* beginning of features section */}
 
@@ -105,12 +108,6 @@ const HomePage = ()=> {
             
            </div>
             </section>
-
-
-            <section className="contributors-section">
-
-            </section>
-            <Contributors />
             <DividerComponent />
             <Footer />
         </div>
