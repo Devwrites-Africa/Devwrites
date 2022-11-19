@@ -50,6 +50,7 @@ const HomePage = ()=> {
                 />
             </section>
             <DividerComponent />
+<<<<<<< HEAD
 
             {/* beginning of features section */}
 
@@ -107,6 +108,8 @@ const HomePage = ()=> {
            </div>
             </section>
             <DividerComponent />
+=======
+>>>>>>> 8eba2df9f3bf36cbd5a8ab3e8e83490d19e441ae
             <Contributors />
             <DividerComponent />
             <Footer />
