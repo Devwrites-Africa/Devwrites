@@ -47,11 +47,6 @@ const HomePage = ()=> {
                     className="writers female-writer"
                 />
             </section>
-
-            <section className="features-section">
-
-            </section>
-
             <DividerComponent />
             <Contributors />
             <DividerComponent />
