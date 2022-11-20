@@ -1,5 +1,8 @@
 const snakeCase = require("snakecase-keys");
 const camelCase = require("camelcase-keys-deep");
+const bcrypt = require("bcrypt");
+
+const jwt = require("jsonwebtoken");
 
 
 async function bcryptHash(password) {
@@ -19,7 +22,6 @@ async function generateJWTToken(payload, secret = config.app.secret) {
   return new Promise((resolve, reject) => {
     jwt.sign({
       ...payload,
-      counter: generateRandomCode(6)
     }, secret, { expiresIn: "720h" }, (err, token) => {
       if (err) {
         reject(err);
