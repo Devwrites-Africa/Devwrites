@@ -1,5 +1,5 @@
 const { model, Schema } = require('mongoose');
-const Author = require('./Author');
+const Author = require('./author.model');
 
 const MODEL_NAME = 'Blog';
 const schema = new Schema(
