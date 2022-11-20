@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DrawerComponent from "./DrawerComponent";
@@ -62,10 +61,7 @@ const Navbar = ()=> {
                             </>
                             
                         )}
-                        
-                    
-                    
-                    
+
                 </Toolbar>
             </AppBar>
         </div>
