@@ -71,4 +71,7 @@ Devwrites is a virtual technical writing community focused on helping techies ge
  - Gatsby
  
  ## UI/Prototype
- https://www.figma.com/file/aLmaxW0GUhf3AabFhIYzFr/DEV-WRITES-PROJECT?node-id=0%3A1
+ - https://www.figma.com/file/aLmaxW0GUhf3AabFhIYzFr/DEV-WRITES-PROJECT?node-id=0%3A1
+ 
+ ## Preview Link
+- https://devwrites-peach.vercel.app/
