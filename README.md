@@ -20,11 +20,7 @@ Devwrites is a virtual technical writing community focused on helping techies ge
 ## Features to Implement
 ### Blog 
 - Create Blog frontend
-  - Create the Home Page
-  - Create the Program Page
-  - Create the Contributor Page
-  - Handle Mobile Responsive
-  - Handle Tablet Responsive
+  - Create the Program Page (assigned)
   - Optimize Performance
   
 - Create the backend
