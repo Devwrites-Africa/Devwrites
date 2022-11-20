@@ -1,16 +1,30 @@
 const Blog = require('../service/blog.service');
+const utils = require("../utils");
 
 module.exports.createBlog = async (req, res, next) => {
   try {
     const response = await Blog.createBlog({
       ...req.body,
       ...req.params,
+      ...req.session
     });
 
-    return res.status(200).json({
-      data: response,
-      status: "ok"
+    return utils.success(res).send(response)
+
+  } catch (err) {
+    next(err);
+  }
+}
+
+module.exports.updateBlog = async (req, res, next) => {
+  try {
+    const response = await Blog.updateBlog({
+      ...req.body,
+      ...req.params,
+      ...req.session
     });
+
+    return utils.success(res).send(response)
 
   } catch (err) {
     next(err);

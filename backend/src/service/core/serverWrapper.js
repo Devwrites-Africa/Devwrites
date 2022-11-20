@@ -1,4 +1,6 @@
 const Validator = require("fastest-validator");
+const utils = require("../../utils");
+
 const validator = new Validator();
 
 const {
@@ -12,7 +14,7 @@ const serviceWrapper = (action) => {
 
   return async function (params = {}) {
     if (validate) {
-      const errors = validate(params);
+      const errors = validate(utils.toCamelCase(params));
       if (Array.isArray(errors)) {
         throw new ValidationError(errors);
       }
