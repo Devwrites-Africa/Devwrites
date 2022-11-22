@@ -10,6 +10,7 @@
 
 :root {
     --lightgreen: #2DB68F;
+    --purple: #0D3767;
     --white: #F5F5F5;
 }
 
@@ -22,11 +23,11 @@
 .logo {
     height: 80px;
     margin-right: auto;
+    margin-left: 10px;
 }
 
 .navLink-container {
     font-family: 'Inter';
-    margin-right: auto;
     text-align: center;
 }
 
@@ -35,15 +36,13 @@ a {
 }
 
 .navLink-container > a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0 30px;
-    color: black;
+    color: var(--purple);
 }
 .navLink-container > .active-link {
-    background-color: #D9D9D9;
-    padding: 10px;
-    border-radius: 5px;
-    color: #2DB68F;
+    padding: 5px 10px;
+    border-bottom: 5px solid #2DB68F;
 }
 
 
