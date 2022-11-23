@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
 
 const AuthorSchema = new mongoose.Schema({
-    fullName: {
+    name: {
         type: String,
         required: true,
         unique: true,
     },
     bio: {
-        type: String,
-        required: true,
-    },
-    email: {
         type: String,
         required: true,
     },
@@ -22,4 +18,4 @@ const AuthorSchema = new mongoose.Schema({
 {timestamps: true}
 );
 
-module.exports = mongoose.model("Author", AuthorSchema)
+module.exports = mongoose.model('Author', AuthorSchema)
