@@ -2,6 +2,7 @@ const express = require('express');
 const routes = require('./routes');
 const cors = require("cors");
 const helmet = require("helmet");
+const bodyParser = require('body-parser');
 
 const {
   errorHandler,
@@ -14,6 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
+app.use(bodyParser.urlencoded({ extended: 'true' }));
 
 /* ROUTES */
 app.use('/v1', routes)
