@@ -2,113 +2,123 @@ import React from "react";
 import DividerComponent from "../Components/DividerComponent";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import ContributorSlide from "../Components/ContributorSlide";
 import Contributors from "../Components/Contributors";
 import { Link } from "react-router-dom";
-import { FaBookOpen, FaPenNib,  FaPrint} from 'react-icons/fa';
-
+import {  
+    FaFacebook, 
+    FaInstagram,
+    FaLinkedin,
+    FaTwitter,
+    FaAngleDown
+} from 'react-icons/fa';
 import "./Home.css";
 
 const HomePage = ()=> {
     return (
         <div className="home-page">
             <Navbar />
-            <DividerComponent />
             <section className="landing-page">
                 <div className="text-container">
-                    <h1>
-                        <span className="colored-text">Home </span>for tech writers <br /> and <span className="colored-text">readers</span>
-                    </h1>
-
+                    <h1>Devwrites Africa</h1>
+                    <h2>
+                        Home for <span className="colored-text">tech <br /> writers</span> and <span className="colored-text">readers</span>
+                    </h2>
                     <p>
                         Blog with us, own your content and <br /> share your ideas with the world.
                     </p>
-
-                    <Link 
-                        to='' 
-                        className="get-started-link"
-                    >
-                        Get Started
-                    </Link>
+                    <div className="btn-container">
+                        <Link 
+                            to='' 
+                            className="landing-page-btn get-started"
+                        >
+                            Get Started
+                        </Link>
+                        <Link 
+                            to='' 
+                            className="landing-page-btn contact-us"
+                        >
+                            Contact Us
+                        </Link>
+                    </div>
                 </div>
+                <div className="landing-image-container">
                 <img 
-                    src="../images/Ellipse-desktop.png" 
-                    className="ellipse-desktop"
+                    src="../Images/landing-image.png" 
+                    className="landing-page-image"
+                    alt=""
                 />
-                <img 
-                    src="../images/Ellipse-mobile.png" 
-                    className="ellipse-mobile"
-                />
-                <img 
-                    src="../images/young-man.png" 
-                    alt="Male Writer"
-                    className="writers male-writer"
-                />
-                <img 
-                    src="../images/young-woman.png" 
-                    alt="Female Writer"
-                    className="writers female-writer"
-                />
+                </div>
             </section>
-            <DividerComponent />
-
-            {/* beginning of features section */}
-
             <section className="features-section">
-            <div className="features-container">
-                <article className="features-header">
-                <div className="features-title">features</div>
-                <p>
-                Spirit third dry. To you'll. Open a
-                first all bring bearing beast unto fruit was 
-                cattle years their open years.</p>
-
-                <p>Spirit third dry. To you'll. Open a 
-                    first all bring bearing 
-                    beast unto fruit was cattle years their open years.  </p>
-                </article>
-              
-              <div className="features" >
-                <article className="single-feature">
-                <span className="feature-icon"><FaPenNib/></span>
-                    <h4 className="feature-title">Writing</h4>
-                    <p className="feature-paragraph">Fruit behold. Under earth. Upon is gathering first. 
-                    He itself. Dominion so sea creepeth. Winged 
-                    which light open first saw. Can't i saw above 
-                    set lights Forth in, void one.c</p>
-                </article>
-                <article className="single-feature feature-1">
-                    <span className="feature-icon"><FaPrint/></span>
-                    <h4 className="feature-title">Blogs</h4>
-                    <p className="feature-paragraph">Fruit behold. Under earth. Upon is gathering first.
-                    He itself. Dominion so sea creepeth. Winged 
-                    which light open first saw. Can't i saw above 
-                    set lights Forth in, void one.
+                <div className="features-heading">
+                    <h1>Identify With Us</h1>
+                    <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
                     </p>
-                </article>
-                <article className="single-feature">
-                <span className="feature-icon"><FaBookOpen/></span>
-                    <h4 className="feature-title">Guidance</h4>
-                    <p className="feature-paragraph">Fruit behold. Under earth. Upon is gathering first.
-                    He itself. Dominion so sea creepeth. Winged which 
-                    light open first saw. Can't i saw above set lights 
-                    Forth in, void one.c</p>
-                </article>
-                <article className="single-feature">
-                <span className="feature-icon"><FaBookOpen/></span>
-                    <h4 className="feature-title">Guidance</h4>
-                    <p className="feature-paragraph">Fruit behold. Under earth. Upon is gathering first. 
-                    He itself.
-                    Dominion so sea creepeth. Winged which light 
-                    open first saw. Can't i saw above set lights 
-                    Forth in, void one.c</p>
-                </article>
-            </div>
-            
-           </div>
+                </div>
+                <div className="features ">
+                    <div className="features-image-container">
+                        <img src='../images/colleagues.png' alt='Colleagues Working Together' />
+                    </div>
+                    <div className="features-text-container">
+                        <h1>Guidance</h1>
+                        <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
+                        </p>
+                    </div>
+                    
+                </div> 
+                <div className="features reversed">
+                    <div className="features-image-container reversed-image">
+                        <img src='../images/afro-americans.png' alt='Afro Americans Working Together' />
+                    </div>
+                    <div className="features-text-container">
+                        <h1>Technical Writing Community</h1>
+                        <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
+                        </p>
+                    </div>
+                    
+                </div> 
+                <div className="features ">
+                    <div className="features-image-container">
+                        <img src='../images/business-executives.png' alt='Business Executives' />
+                    </div>
+                    <div className="features-text-container">
+                        <h1>Attend Our Programs</h1>
+                        <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div className="features reversed">
+                    <div className="features-image-container reversed-image">
+                        <img src='../images/afro-americans.png' alt='Afro Americans Working Together' />
+                    </div>
+                    <div className="features-text-container">
+                        <h1>Share Your Work</h1>
+                        <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="features ">
+                    <div className="features-image-container">
+                        <img src='../images/business-executives.png' alt='Business Executives' />
+                    </div>
+                    <div className="features-text-container">
+                        <h1>Follow Us on Social Media</h1>
+                        <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
+                        </p>
+                        <div className="home-social-icons">
+                            <FaFacebook className="social-icon" />
+                            <FaInstagram className="social-icon" />
+                            <FaLinkedin className="social-icon" />
+                            <FaTwitter className="social-icon" />
+                        </div>
+                    </div>
+                </div> 
             </section>
-            <DividerComponent />
-            <Contributors />
-            <DividerComponent />
+            <ContributorSlide />
             <Footer />
         </div>
     )

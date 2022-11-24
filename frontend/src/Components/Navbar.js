@@ -15,18 +15,12 @@ const Navbar = ()=> {
     const theme = useTheme();
     const mobileView = useMediaQuery(theme.breakpoints.down('md'))
 
-    const styles = {
-        contactBtn: {
-            '&:hover': {
-                background: '#2DB68F',
-                boxShadow: '0'
-            },
-            
-            background: '#2DB68F',
-            boxShadow: '0',
-            textTransform: 'capitalize',
-            fontSize: '1.2rem', 
-            marginRight: '30px'
+     const styles = {
+        tab: {
+           color: 'var(--purple)',
+           fontWeight: '700',
+           fontSize: '1.2rem',
+           textDecoration: 'capitalize'
         },
     }
     
@@ -42,24 +36,20 @@ const Navbar = ()=> {
                         { mobileView ? (
                             <DrawerComponent />
                         ) : (
-                            <>
-                                <div className='navLink-container'>
-                                    <Link to='/' className="active-link">Home</Link>
-                                    <Link to='/about'>About</Link>
-                                    <Link to=''>Blog</Link>
-                                    <Link to=''>Programs</Link>
-                                </div>
-
-                                <Link to='' className="contact-btn">
-                                    <Button
-                                        sx={styles.contactBtn} 
-                                        variant="contained"
-                                    >
-                                        Contact Us
-                                    </Button>
-                                </Link>
-                            </>
-                            
+                            // <Tabs >
+                            //     <Tab label='Home' sx={styles.tab}/>
+                            //     <Tab label='About' sx={styles.tab}/>
+                            //     <Tab label='Contributors' sx={styles.tab}/>
+                            //     <Tab label='Blog' sx={styles.tab}/>
+                            //     <Tab label='Programs' sx={styles.tab}/>
+                            // </Tabs>
+                            <div className='navLink-container'>
+                                <Link to='/' className="active-link">Home</Link>
+                                <Link to='/about'>About</Link>
+                                <Link to=''>Contributors</Link>
+                                <Link to=''>Blog</Link>
+                                <Link to=''>Programs</Link>
+                            </div>
                         )}
 
                 </Toolbar>

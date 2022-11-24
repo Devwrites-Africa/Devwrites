@@ -68,6 +68,13 @@ const DrawerComponent = () => {
                     <ListItem sx={styles.links}>
                         <ListItemText onClick={handleDrawerChange}>
                             <Link to="" className="drawer-link">
+                                Contributors
+                            </Link>
+                        </ListItemText>
+                    </ListItem>
+                    <ListItem sx={styles.links}>
+                        <ListItemText onClick={handleDrawerChange}>
+                            <Link to="" className="drawer-link">
                                 Blog
                             </Link>
                         </ListItemText>
