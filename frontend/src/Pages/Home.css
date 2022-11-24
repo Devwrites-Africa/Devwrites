@@ -237,7 +237,7 @@
     left: 20px;
 }
 
-.social-icon-container {
+.home-social-icons {
     display: flex;
     justify-content: space-between;
     background: var(--purple);

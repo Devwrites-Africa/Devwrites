@@ -109,7 +109,7 @@ const HomePage = ()=> {
                         <h1>Follow Us on Social Media</h1>
                         <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
                         </p>
-                        <div className="social-icon-container">
+                        <div className="home-social-icons">
                             <FaFacebook className="social-icon" />
                             <FaInstagram className="social-icon" />
                             <FaLinkedin className="social-icon" />

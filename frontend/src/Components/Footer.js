@@ -18,7 +18,7 @@ const Footer = ()=> {
                         helping techies get started with technical writing and API 
                         documentation.
                     </p>
-                    <div className="social-icon-container">
+                    <div className="footer-social-icon">
                         <FaFacebook className="social-media"/>
                         <FaInstagram className="social-media"/>
                         <FaLinkedin className="social-media"/>
