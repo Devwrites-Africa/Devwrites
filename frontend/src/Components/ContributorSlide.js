@@ -37,6 +37,7 @@ const styles = {
     card: {
         width: '700px',
         margin: '0 auto',
+        background: '#f5f5f5',
     },
     cardHeader: {
         display: 'flex',
@@ -65,7 +66,7 @@ const ContributorSlide = ()=> {
     return (
         <section className="contributors">
             <ThemeProvider theme={theme}>
-                <Typography variant='h4' align='center'>Contributors</Typography>
+                <Typography variant='h4' align='center'>Testimonials</Typography>
             </ThemeProvider>
             <Card sx={styles.card} elevation={0}>
                 <CardHeader sx={styles.cardHeader}

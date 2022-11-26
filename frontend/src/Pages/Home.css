@@ -153,6 +153,11 @@
 }
 
 /*features-section */
+
+.features-section {
+    background: var(--white);
+}
+
 .features-heading {
     text-align: center;
     padding: 30px 50px;
@@ -175,9 +180,8 @@
 .features {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     padding: 0 50px;
-    /* background: red; */
 }
 
 .features-image-container {
@@ -237,6 +241,10 @@
     left: 20px;
 }
 
+.features-social-media {
+    margin-bottom: 0;
+}
+
 .home-social-icons {
     display: flex;
     justify-content: space-between;
@@ -250,4 +258,57 @@
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
+}
+
+.contributors {
+    background: var(--white);
+    padding-top: 80px;
+}
+.testimonial-section {
+    background: var(--white);
+}
+
+.subscribe-container {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.subscribe-container > h1 {
+    font-size: 2rem;
+    font-family: 'Inter';
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.subscribe-container > p {
+    font-size: 1.5rem;
+    font-family: 'Futura Bk BT';
+    margin-bottom: 30px;
+}
+
+.subsribe-input {
+    display: flex;
+    justify-content: center;
+}
+.subsribe-input > input {
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-size: 1.2rem; 
+}
+.subscribe-email {
+    border: 3px solid white;
+    background: white;
+    margin-right: 20px;
+    box-shadow: 1px 1px 2px gray;
+     
+}
+.subscribe-email:focus {
+    outline: none;
+}
+.subscribe-btn {
+    border: 3px solid var(--purple);
+    color: var(--purple);
+    font-weight: bold;
 }

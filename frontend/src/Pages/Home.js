@@ -65,7 +65,6 @@ const HomePage = ()=> {
                         <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
                         </p>
                     </div>
-                    
                 </div> 
                 <div className="features reversed">
                     <div className="features-image-container reversed-image">
@@ -101,7 +100,7 @@ const HomePage = ()=> {
                     </div>
                 </div>
 
-                <div className="features ">
+                <div className="features features-social-media">
                     <div className="features-image-container">
                         <img src='../images/business-executives.png' alt='Business Executives' />
                     </div>
@@ -118,7 +117,17 @@ const HomePage = ()=> {
                     </div>
                 </div> 
             </section>
-            <ContributorSlide />
+            <section className='testimonial-section'>
+                <ContributorSlide />
+                <div className="subscribe-container">
+                    <h1>Don't want to miss anything?</h1>
+                    <p>Get weekly update on the latest blogs, programs and tips right in your mailbox</p>
+                    <div className="subsribe-input">
+                        <input type='email' placeholder='Email' className="subscribe-email" />
+                        <input type='submit' className="subscribe-btn" value='Submit' />
+                    </div>
+                </div>
+            </section>
             <Footer />
         </div>
     )
