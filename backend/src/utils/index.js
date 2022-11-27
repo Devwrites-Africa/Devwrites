@@ -1,8 +1,10 @@
 const snakeCase = require("snakecase-keys");
 const camelCase = require("camelcase-keys-deep");
+const config = require("../config");
 const bcrypt = require("bcrypt");
 
 const jwt = require("jsonwebtoken");
+const { Types } = require("mongoose");
 
 
 async function bcryptHash(password) {
@@ -13,6 +15,9 @@ async function bcryptCompare(password, hash) {
   return bcrypt.compare(password, hash);
 }
 
+function $id(id) {
+  return Types.ObjectId(id);
+}
 
 function toCamelCase(data = {}) {
   return camelCase(data, { deep: true })
@@ -70,5 +75,6 @@ module.exports = {
   decodeToken,
   success,
   toCamelCase,
-  sluggify
+  sluggify,
+  $id
 };

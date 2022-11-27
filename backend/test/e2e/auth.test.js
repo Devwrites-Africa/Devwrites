@@ -10,9 +10,20 @@ const userClient = {
 };
 
 describe('Authentication', () => {
+  describe('Register', () => {
+    it('login client', async () => {
+      const res = await server.post('/v1/auth/register').send({
+        email: userClient.email,
+        password: userClient.password,
+      });
+
+      console.log(res.body, res.error);
+      assert.equal(res.status, 200);
+    });
+  });
   describe('Login', () => {
     it('login client', async () => {
-      const res = await server.post('/v1/login').send({
+      const res = await server.post('/v1/auth/login').send({
         email: userClient.email,
         password: userClient.password,
       });
