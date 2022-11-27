@@ -1,16 +1,15 @@
 import React from "react";
-import DividerComponent from "../Components/DividerComponent";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import ContributorSlide from "../Components/ContributorSlide";
-import Contributors from "../Components/Contributors";
+import Testimonial from "../Components/Testimonial";
 import { Link } from "react-router-dom";
 import {  
     FaFacebook, 
     FaInstagram,
     FaLinkedin,
     FaTwitter,
-    FaAngleDown
+    FaAngleDown,
+    FaAngleRight
 } from 'react-icons/fa';
 import "./Home.css";
 
@@ -49,6 +48,7 @@ const HomePage = ()=> {
                     alt=""
                 />
                 </div>
+                <FaAngleDown className="angledown" />
             </section>
             <section className="features-section">
                 <div className="features-heading">
@@ -85,8 +85,7 @@ const HomePage = ()=> {
                         <h1>Attend Our Programs</h1>
                         <p>Nihil, aperiam, ad molestiae ut enim reprehenderit rem repudiandae ducimus dolorum obcaecati rerum accusamus provident atque eos cum. Reiciendis, modi, sint, velma.
                         </p>
-                    </div>
-                    
+                    </div>  
                 </div>
 
                 <div className="features reversed">
@@ -113,12 +112,19 @@ const HomePage = ()=> {
                             <FaInstagram className="social-icon" />
                             <FaLinkedin className="social-icon" />
                             <FaTwitter className="social-icon" />
+                            <FaAngleRight className="social-icon angle-right" />
                         </div>
                     </div>
                 </div> 
             </section>
+            <section className="illustration-image-section">
+                <img src='./Images/magic_illustration.png' alt='Magic Illustration' className="illustration-img" />
+                <div className='illustration-text'>
+                    <p>Interested in technical writing? It’s not too late, you can start today, and remember it’s never too late to learn a new skill!</p>
+                </div>
+            </section>
             <section className='testimonial-section'>
-                <ContributorSlide />
+                <Testimonial />
                 <div className="subscribe-container">
                     <h1>Don't want to miss anything?</h1>
                     <p>Get weekly update on the latest blogs, programs and tips right in your mailbox</p>
