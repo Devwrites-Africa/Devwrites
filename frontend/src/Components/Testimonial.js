@@ -18,7 +18,7 @@ theme.typography.body2 = {
 
 theme.typography.h4 = {
     fontSize: '2rem',
-    marginBottom: '20px',
+    marginBottom: '50px',
     fontFamily: 'Inter',
     color: '#0D3767',
     fontWeight: '700',
@@ -37,6 +37,7 @@ const styles = {
     card: {
         width: '700px',
         margin: '0 auto',
+        background: '#f5f5f5',
     },
     cardHeader: {
         display: 'flex',
@@ -61,11 +62,11 @@ const styles = {
     }
 }
 
-const ContributorSlide = ()=> {
+const Testimonial = ()=> {
     return (
         <section className="contributors">
             <ThemeProvider theme={theme}>
-                <Typography variant='h4' align='center'>Contributors</Typography>
+                <Typography variant='h4' align='center'>Testimonials</Typography>
             </ThemeProvider>
             <Card sx={styles.card} elevation={0}>
                 <CardHeader sx={styles.cardHeader}
@@ -79,8 +80,8 @@ const ContributorSlide = ()=> {
                     titleTypographyProps={styles.cardHeaderTitle}
                     title='Devwrites Africa'
 
-                    subheaderTypographyProps={styles.subHeaderTitle}
-                    subheader='Software Developer'
+                    // subheaderTypographyProps={styles.subHeaderTitle}
+                    // subheader='Software Developer'
                 />
                 <CardContent>
                     <ThemeProvider theme={theme}>
@@ -97,4 +98,4 @@ const ContributorSlide = ()=> {
     )
 }
 
-export default ContributorSlide
+export default Testimonial
