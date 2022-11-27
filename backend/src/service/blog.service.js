@@ -28,13 +28,16 @@ module.exports.createBlog = serviceWrapper({
   },
   async handler ({ accountId, ...blogData }) {
 
-    // TODO 
-    /*
-      1. Fetch Account Author Details
-      2. Update the blogData
-    */
+    const author = await models.Author.findOne({
+      accountId: utils.$id(accountId)
+    });
+
+    blogData.authorId = author._id;
+
     blogData.slug = utils.sluggify(blogData.title);
+
     const newBlog = await models.Blog.create(blogData);
+
     return newBlog;
   }
 })
@@ -64,21 +67,18 @@ module.exports.updateBlog = serviceWrapper({
     },
   },
   async handler ({ accountId, ...blogUpdates }) {
+    const author = await models.Author.findOne({ accountId: utils.$id(accountId) });
 
-    // TODO 
-    /*
-      1. Fetch Account Author Details
-      2. Update the blogData based on if account owner matches blog owner
-    */
-    const blogPost = await models.Blog.findOne({ authorId, blogId });
+    const blogPost = await models.Blog.findOne({ authorId: author._id, blogId });
 
     if (!blogPost) {
-      throw new NotFoundError("No blog post belonging to your account has been found")
+      throw new NotFoundError("no blog post belonging to your account has been found")
     }
 
     await models.Blog.updateOne({ _id: blogPost._id }, blogUpdates);
 
     const updatedBlog = await models.Blog.findOne({ _id: blogPost._id });
+
     return updatedBlog;
   }
 })

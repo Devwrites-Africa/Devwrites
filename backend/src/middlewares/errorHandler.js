@@ -9,6 +9,7 @@ module.exports.notFoundHandler = (req, res) => {
 };
 
 module.exports.errorHandler = (err, req, res, next) => {
+  console.log(err)
   if (res.headersSent) return next(err);
   switch (err.name) {
     case "ServiceError":

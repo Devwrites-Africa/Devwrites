@@ -1,4 +1,0 @@
-{"body":"{\r\n    \"name\" : \"Augusta\",\r\n    \"bio\" : \"ehisnet@gmail.com\",\r\n    }\r\n","expose":true,"level":"error","status":400,"statusCode":400,"type":"entity.parse.failed"}
-{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.cluster0.kngtf.mongodb.net","level":"error","syscall":"querySrv"}
-{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.cluster0.kngtf.mongodb.net","level":"error","syscall":"querySrv"}
-{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.cluster0.kngtf.mongodb.net","level":"error","syscall":"querySrv"}

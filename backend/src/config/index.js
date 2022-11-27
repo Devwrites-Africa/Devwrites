@@ -3,6 +3,9 @@ const { APP_ENV } = require("./constants");
 require("dotenv").config();
 
 const config = Object.freeze({
+  env: {
+    isProduction: false,
+  },
   app: {
     port: process.env.PORT || 3032,
     secret: process.env.APP_SECRET,
