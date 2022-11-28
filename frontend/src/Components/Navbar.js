@@ -47,8 +47,8 @@ const Navbar = ()=> {
                                 <Link to='/' className="active-link">Home</Link>
                                 <Link to='/about'>About</Link>
                                 <Link to=''>Contributors</Link>
-                                <Link to=''>Blog</Link>
-                                <Link to=''>Programs</Link>
+                                <Link to='/blog'>Blog</Link>
+                                <Link to='/programs'>Programs</Link>
                             </div>
                         )}
 

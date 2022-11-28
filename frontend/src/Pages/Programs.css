@@ -1,0 +1,267 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pg {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.pg-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pg-header {
+    color: #0D3767;
+    font-weight: 800;
+    font-size: 5.0rem;
+    font-family: Inter;
+}
+
+.pg-line {
+    width: 180px;
+    color: #2DB68F;
+    border: 5px solid #2DB68F;
+}
+
+.pg-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    width: 50vw;
+    font-family: Futura;
+    line-height: 28px;
+    color: #0D3767;
+}
+
+.pg-img {
+    width: 20%;
+}
+
+.pg-article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.pg-article-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+.pg-article-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pg-article-header {
+    color: #0D3767;
+    font-size: 5.0rem;
+    font-weight: 800;
+    font-family: Inter;
+}
+
+.pg-article-text {
+    color: #0D3767;
+    font-size: 2.4rem;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: Futura;
+    width: 48vw;
+}
+
+.pg-article-btn {
+    background-color: #2DB68F;
+    border-radius: 73px;
+    border: none;
+    width: 65%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #F5F5F5;
+    font-size: 2.0rem;
+    font-weight: 800;
+    font-family: Inter;
+    cursor: pointer;
+}
+
+.pg-article-img {
+    width: 30%;
+}
+
+.programs-bg {
+    background-image:
+        url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    border-radius: 15px;
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.programs-bg-1 {
+    background: rgba(0, 0, 0, 0.67);
+    backdrop-filter: blur(4.5px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.programs-text {
+    color: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 43px;
+    width: 60%;
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.programs-text-green {
+    color: #2DB68F;
+}
+
+@media screen and (max-width: 480px) {
+    .pg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .pg-text {
+        font-size: 2.0rem;
+        width: 80vw;
+    }
+
+    .pg-img {
+        width: 70%;
+    }
+
+    .pg-article-flex {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .pg-article-header {
+        font-size: 3.5rem;
+    }
+
+    .pg-article-text {
+        font-size: 2.0rem;
+        width: 80vw;
+    }
+
+    .pg-article-btn {
+        font-size: 1.8rem;
+        font-weight: 800;
+        width: 100%;
+    }
+
+    .pg-article-img {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .programs-bg-1 {
+        width: 70%;
+    }
+
+    .programs-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 895px) {
+    .pg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .pg-text {
+        font-size: 2.2rem;
+        width: 80vw;
+    }
+
+    .pg-img {
+        width: 70%;
+    }
+
+    .pg-article-flex {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .pg-article-header {
+        font-size: 4.5rem;
+    }
+
+    .pg-article-text {
+        font-size: 2.5rem;
+        width: 70vw;
+    }
+
+    .pg-article-btn {
+        font-size: 2.0rem;
+        width: 100%;
+    }
+
+    .pg-article-img {
+        width: 70%;
+    }
+
+    .programs-bg-1 {
+        width: 70%;
+    }
+
+    .programs-text {
+        font-size: 2.8rem;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 896px) and (max-width: 1200px) {
+    .pg-article-header {
+        font-size: 4.8rem;
+    }
+
+    .pg-article-text {
+        font-size: 2.2rem;
+    }
+
+    .pg-article-btn {
+        width: 80%;
+        font-size: 2.0rem;
+    }
+
+    .pg-article-img {
+        width: 40%;
+    }
+}
+
