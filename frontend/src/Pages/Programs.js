@@ -44,7 +44,7 @@ const Programs = () => {
                         <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                     </div>
 
-                    <div className='pg-article-flex'>
+                    <div className='pg-article-flex-1'>
                         <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                         <div className='pg-article-item'>
                             <h2 className='pg-article-header'>Lorem Ipsum Text</h2>
@@ -84,7 +84,7 @@ const Programs = () => {
                             <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                     </div>
 
-                    <div className='pg-article-flex'>
+                    <div className='pg-article-flex-1'>
                         <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                         <div className='pg-article-item'>
                             <h2 className='pg-article-header'>Lorem Ipsum Text</h2>
@@ -134,7 +134,7 @@ const Programs = () => {
                             <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                     </div>
 
-                    <div className='pg-article-flex'>
+                    <div className='pg-article-flex-1'>
                         <img className='pg-article-img' src='/images/pg-img.png' alt='pg-img' />
                         <div className='pg-article-item'>
                             <h2 className='pg-article-header'>Lorem Ipsum Text</h2>

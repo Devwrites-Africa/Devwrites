@@ -58,7 +58,7 @@ body {
     gap: 50px;
 }
 
-.pg-article-flex {
+.pg-article-flex, .pg-article-flex-1 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 200px;
@@ -83,12 +83,12 @@ body {
     line-height: 36px;
     font-weight: 400;
     font-family: Futura;
-    width: 48vw;
+    width: 38vw;
 }
 
 .pg-article-btn {
     background-color: #2DB68F;
-    border-radius: 73px;
+    border-radius: 75px;
     border: none;
     width: 65%;
     padding-top: 20px;
@@ -161,6 +161,12 @@ body {
     }
 
     .pg-article-flex {
+        flex-direction: column-reverse;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .pg-article-flex-1 {
         flex-direction: column;
         gap: 50px;
         align-items: center;
@@ -213,6 +219,12 @@ body {
     }
 
     .pg-article-flex {
+        flex-direction: column-reverse;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .pg-article-flex-1 {
         flex-direction: column;
         gap: 50px;
         align-items: center;
