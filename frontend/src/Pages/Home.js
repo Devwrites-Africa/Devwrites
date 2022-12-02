@@ -14,7 +14,6 @@ import {
 import "./Home.css";
 
 const HomePage = ()=> {
-    console.log(window.innerWidth)
     return (
         <div className="home-page">
             <Navbar />
