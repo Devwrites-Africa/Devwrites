@@ -32,30 +32,28 @@ const Navbar = () => {
                 position="relative"
             >
                 <Toolbar>
-                    <img src="./Images/Logo.png" alt="logo" className="logo" />
-                    {mobileView ? (
-                        <DrawerComponent />
-                    ) : (
-                        // <Tabs >
-                        //     <Tab label='Home' sx={styles.tab}/>
-                        //     <Tab label='About' sx={styles.tab}/>
-                        //     <Tab label='Contributors' sx={styles.tab}/>
-                        //     <Tab label='Blog' sx={styles.tab}/>
-                        //     <Tab label='Programs' sx={styles.tab}/>
-                        // </Tabs>
-                        <div className="navLink-container">
-                            <Link to="/" className="active-link">
-                                Home
-                            </Link>
-                            <Link to="/about">About</Link>
-                            <Link to="">Contributors</Link>
-                            <Link to="">Blog</Link>
-                            <Link to="">Programs</Link>
-                            <Link to="" className="landing-page-btn contact-us">
-                                Contact Us
-                            </Link>
-                        </div>
-                    )}
+                
+                    <img src="./Images/Logo.png" alt="logo" className='logo' />
+                        { mobileView ? (
+                            <DrawerComponent />
+                        ) : (
+                            // <Tabs >
+                            //     <Tab label='Home' sx={styles.tab}/>
+                            //     <Tab label='About' sx={styles.tab}/>
+                            //     <Tab label='Contributors' sx={styles.tab}/>
+                            //     <Tab label='Blog' sx={styles.tab}/>
+                            //     <Tab label='Programs' sx={styles.tab}/>
+                            // </Tabs>
+                            <div className='navLink-container'>
+                                <Link to='/' className="active-link">Home</Link>
+                                <Link to='/about'>About</Link>
+                                <Link to=''>Contributors</Link>
+                                <Link to='/blog'>Blog</Link>
+                                <Link to='/programs'>Programs</Link>
+                            </div>
+                        )}
+
+
                 </Toolbar>
             </AppBar>
         </div>

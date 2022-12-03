@@ -45,7 +45,7 @@ const Footer = ()=> {
                         </div>
 
                         <div className="links footer-blog-link">
-                            <Link to=''>Blog</Link>
+                            <Link to='/blog'>Blog</Link>
                             <p>Recent</p>
                             <p>Recent</p>
                             <p>Recent</p>
@@ -53,7 +53,7 @@ const Footer = ()=> {
                         </div>
 
                         <div className="links footer-programs-link">
-                            <Link to=''>Programs</Link>
+                            <Link to='/programs'>Programs</Link>
                             <p>Manifesto</p>
                             <p>Manifesto</p>
                             <p>Manifesto</p>
