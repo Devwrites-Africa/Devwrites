@@ -48,7 +48,23 @@ const HomePage = ()=> {
                     alt=""
                 />
                 </div>
-                <FaAngleDown className="angledown" />
+                <div className="small-btn-container">
+                        <Link 
+                            to='' 
+                            className="small-landing-page-btn small-get-started"
+                        >
+                            Get Started
+                        </Link>
+                        <Link 
+                            to='' 
+                            className="small-landing-page-btn small-contact-us"
+                        >
+                            Contact Us
+                        </Link>
+                    </div>
+                <FaAngleDown 
+                    className="angledown"
+                />
             </section>
             <section className="features-section">
                 <div className="features-heading">
