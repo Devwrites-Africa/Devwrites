@@ -2,92 +2,329 @@
     font-family: "Inter";
     overflow: hidden;
 }
-.header {
+
+/* HERO SECTION */
+.hero-header {
     background-color: #f5f5f5;
 }
-.header-content {
+.hero-header-content {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
-.content {
+.hero-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
-.content img {
+.hero-content img {
     object-fit: contain;
     width: 300px;
     height: 225px;
-    margin-right: 10rem;
+    margin-right: 15rem;
 }
 
-/*  About - section */
+/*  ABOUT-PAGE-CONTENT - SECTION */
 .about-content {
     width: 100%;
     background-color: #f5f5f5;
     padding: 3rem;
 }
-.our-values__img {
+/* WHO WE ARE SECTION */
+.who-we-are {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.who-we-are .image__box {
+    width: 80%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: url("../../public/Images/friends.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.who-we-are .about-box {
+    width: 70%;
+    padding: 4rem 3rem;
+    background-color: #0d3767;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: -100px;
+}
+.who-we-are .about-box p {
+    margin: 1.5rem auto 0 auto;
+    line-height: 1.2;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    width: 50%;
+    text-align: center;
+    font-family: "Futura Bk BT";
+}
+
+/* OUR VALUES SECTION*/
+.our-values-container {
+    padding: 3rem 0;
+}
+.our-values-container__box {
+    width: 80%;
+    background-color: #0d3767;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-left: 35rem;
+    display: flex;
+    align-items: center;
+}
+.our-values {
+    display: flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+}
+.our-values-value {
+    margin-left: 3rem;
+}
+.our-values-value img {
     width: 100px;
     height: 100px;
 }
-
-/* what-we-do */
-.what-we-do ul {
-    list-style-type: none;
-}
-.what-we-do ul li {
-    font-size: 20px;
-    font-weight: 500;
+.our-values-value p {
+    font-family: "Futura Bk BT";
     font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 48px;
+    text-align: center;
 }
-/* overlays */
-.overlay-content {
+
+/* OUR MISSION SECTION*/
+.our-mission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.our-mission-imagebox {
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    margin-right: -100px;
+    overflow: hidden;
+    background: url("../../public/Images/man-and-woman.png") no-repeat center;
+    background-size: cover;
+    z-index: 10;
+}
+.our-mission-content {
+    width: 500px;
+    height: 400px;
+    min-height: 400px;
+    background-color: #0d3767;
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+.our-mission-overlay-content {
     margin-left: 100px;
 }
-@media only screen and (max-width: 992px) {
-    .content img {
-        margin-right: 2rem;
+.our-mission-content h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+.our-mission-content p {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.3;
+    font-family: "Futura Bk BT";
+}
+
+/* GETTING STARTED SECTION*/
+.get-started-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-started-imagebox {
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 3rem 0;
+    background: url("../../public/Images/unsplash-image.png") no-repeat center;
+    background-size: cover;
+}
+.get-started-content {
+    width: 60%;
+    height: 200px;
+    background: linear-gradient(
+        180deg,
+        rgba(21, 21, 21, 0.47) 0%,
+        rgba(0, 0, 0, 0.78) 100%
+    );
+    backdrop-filter: blur(11.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2rem;
+}
+.get-started-content p {
+    font-family: "Futura Bk BT";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+}
+.get-started-content p span {
+    color: #2db68f;
+    display: inline-block;
+    margin-top: 20px;
+    font-style: normal;
+    font-family: Inter;
+}
+
+/* MEDIUM DEVICES MEDIA QUERIES */
+@media (min-width: 600px) and (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .image__box {
+    .hero-content img {
+        margin-right: 0;
+        margin-top: 10rem;
+        align-self: center;
+    }
+    .about-content {
+        padding: 3rem 2rem;
+    }
+    .who-we-are .image__box {
         width: 100%;
     }
-    .our-values__box {
+    .who-we-are .about-box {
+        width: 90%;
+        border-radius: 10px;
+    }
+    .our-values-container__box {
+        margin-left: 2rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .our-mission-container {
+        flex-direction: column;
+    }
+    .our-mission-imagebox {
+        width: 100%;
+        height: 500px;
+        margin-right: 0;
+        background-position: top center;
+    }
+    .our-mission-content {
+        width: 90%;
+        border-radius: 10px;
+        z-index: 20;
+        margin-top: -100px;
+        text-align: center;
+        padding: 50px;
+    }
+    .our-mission-overlay-content {
         margin-left: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .get-started-imagebox {
         width: 100%;
     }
 }
-@media only screen and (max-width: 600px) {
+
+/* SMALL DEVICES MEDIA QUERIES */
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hero-content img {
+        margin-right: 0;
+        margin-top: 10rem;
+        align-self: center;
+    }
     .about-content {
-        padding: 3rem 1rem;
-    }
-    .image-box {
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .overlay-content {
-        margin-left: 0;
-        text-align: center;
+        padding: 3rem 0rem;
     }
 
-    .overlay-desc {
-        line-height: 1.5;
-        word-wrap: break-word;
-        width: 70%;
+    .who-we-are .image__box {
+        width: 100%;
+        border-radius: 0;
+        background-position: left center;
     }
-    .image__box,
-    .about-box {
+    .who-we-are .about-box {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    .who-we-are .about-box p {
+        width: 100%;
+    }
+    .our-values-container__box {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 0;
+        flex-direction: column;
+    }
+    .our-values {
+        margin-top: 10px;
+    }
+    .value-1 {
+        margin-left: 0rem;
+    }
+    .value-1 p {
+        line-height: 25px;
+        text-align: start;
+    }
+    .our-values-value img {
+        width: 60px;
+        height: 60px;
+    }
+    .our-mission-container {
+        flex-direction: column;
+    }
+    .our-mission-imagebox {
+        width: 100%;
+        height: 500px;
+        margin-right: 0;
+        background-position: top center;
         border-radius: 0;
     }
-
-    .our-values__img {
-        width: 70px;
-        height: 70px;
+    .our-mission-content {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        z-index: 20;
+        text-align: center;
+        padding: 50px;
     }
-    .content img {
-        width: 150px;
-        margin-right: 2rem;
+    .our-mission-overlay-content {
+        margin-left: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .get-started-imagebox {
+        width: 100%;
+        border-radius: 0;
+    }
+    .get-started-content {
+        width: 100%;
+        border-radius: 0;
     }
 }
