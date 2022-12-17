@@ -1,0 +1,625 @@
+
+
+    /********************************/
+    /* begining of general  styles */
+/********************************/
+.Blog-page {
+    font-family: "Inter";
+    color: var(--purple);
+    background: var(--white);
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--purple);
+    
+}
+
+
+.blog-container {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+
+    /********************************/
+    /* begining of landing page section */
+/********************************/
+
+.landing-section {
+    min-height: 40vh;
+
+}
+
+
+
+.blog-vector {
+   margin-left: 6.93rem;
+   height: 100%;
+}
+
+
+.blog-title h1 {
+    color:  #0D3767;
+    font-weight: 900;
+    font-size: 2.5rem;
+
+}
+
+.underline {
+    width: 3.5rem;
+    height: 0.25rem;
+    margin-top: 0.8rem;
+    background-color:#2DB68F ;
+}
+
+.blog-heading {
+    margin-top: 12rem;
+    margin-bottom: 2.36rem;
+}
+
+
+
+.form-control {
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+    padding: 0;
+
+
+}
+
+.search-bar {
+    background: #D9D9D9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1' stroke-linecap='square' stroke-linejoin='bevel'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 13px center;
+    width: 100%;
+    height:2.4rem;
+    border-radius: 1.0rem;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 4px 9px 48px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    /********************************/
+    /* begining of blogs section */
+/********************************/
+
+.blogs {
+    display: grid;
+}
+
+
+
+
+.single-blog {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 28px rgba(0,0,0, 0.25);
+    border-radius:0.93rem;
+    margin-bottom: 2.5rem;
+}
+
+.blog-content {
+    padding: 1.5rem;
+
+}
+
+.blog-tag{
+color:#2DB68F;
+font-size: 1rem;
+line-height: 1.25rem;
+font-weight: 700;
+margin: 0.18rem;
+
+}
+
+.single-blog h3 {
+color: #0D3767;
+font-weight: 800;
+font-size: 1.5rem;
+line-height: 1.25rem;
+margin-bottom: 0.18rem;
+}
+
+.blog-paragraph {
+    font-family: futura Bk BT;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+margin-bottom: 0.18rem;
+line-height: 1.12rem;
+
+}
+
+
+
+.single-blog h4 {
+    font-family: futura Bk BT;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+
+
+.blog-photos {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    }
+
+    
+    /********************************/
+    /* begining of top section */
+/********************************/
+
+    .top-blogs-section {
+        margin-top: 8.9rem;
+    }
+
+    .top-blogs-header {
+        background-image: url('../top-image-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        height:58rem;
+        border-radius:0.93rem;
+        padding: 2.6rem;
+        margin-top: 1.25rem;
+
+    }
+
+    .top-blogs-header h2 {
+color:#2DB68F;
+font-weight: 700;
+font-size:1.875rem;
+line-height: 2.28rem;
+
+    }
+    .top-blogs-header h1 {
+        color:#2DB68F;
+        font-weight: 800;
+        font-size:2.5rem;
+        line-height: 2.28rem;
+        color:#F5F5F5;
+        margin-top: 0.68rem;
+        
+    }
+    .top-blogs-header p {
+        font-family:futura Bk BT;
+        font-weight: 400;
+        font-style: italic;
+        font-style: 1.5rem;
+        color: #F5F5F5;
+        margin-top: 0.68rem;
+
+    }
+    .top-blogs-header footer {
+        font-family:futura Bk BT;
+        font-weight: 400;
+        font-style: italic;
+        font-style: 1.5rem;
+        color: #F5F5F5;
+        margin-top: 0.68rem;
+
+    }
+
+    .top-blogs-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.8rem;
+        column-gap: 0.875rem;
+        row-gap: 1.85rem;
+    } 
+
+    .single-top-blog img {
+        border-radius:0.435rem;
+    }
+
+    .single-top-blog h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #2DB68F;
+        line-height: 0.9rem;
+        margin-top: 0.18rem;
+
+        ;
+    }
+
+    .single-top-blog h3 {
+        font-size: 1.5rem;
+        color:#0D3767;
+        font-weight: 800;
+        margin-top: 0.18rem;
+        ;
+    }
+    .single-top-blog p {
+font-family:futura Bk BT;
+font-weight:400;
+font-style: italic;
+font-size: 0.9rem;
+margin-top: 0.18rem;
+    }
+    
+    
+    .single-top-blog .last-text {
+        font-family:futura Bk BT;
+        font-weight:800;
+        font-style: italic;
+        font-size: 0.8rem;
+        margin-top: 0.18rem;
+    }
+
+    /********************************/
+    /* begining of popular section */
+/********************************/
+.popular-blogs-section {
+    margin-top: 9.2rem;
+}
+
+
+.popular-container {
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns:80%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    gap: 0.8rem;
+    
+}
+
+.popular-container::-webkit-scrollbar{
+    width:0;
+}
+
+.single-popular {
+    width:100%;
+    height: 24rem;
+    background-color: yellow;
+    border-radius: 0.93rem;
+    padding: 2.2rem;
+    margin-top: 1.25rem;
+
+}
+
+.single-popular h2 {
+   
+    color:#2DB68F;
+    font-weight: 700;
+    font-size:1.875rem;
+    line-height: 2.28rem;
+}
+
+.single-popular h1 {
+    color:#2DB68F;
+        font-weight: 800;
+        font-size:2rem;
+        line-height: 2.28rem;
+        color:#F5F5F5;
+        margin-top: 0.68rem;
+
+}
+
+.single-popular p {
+    font-family:futura Bk BT;
+    font-weight: 400;
+    font-style: italic;
+    font-style: 1.5rem;
+    color: #F5F5F5;
+    margin-top: 0.68rem;
+
+}
+
+.single-popular footer {
+    font-family:futura Bk BT;
+        font-weight: 400;
+        font-style: italic;
+        font-style: 1.5rem;
+        color: #F5F5F5;
+        margin-top: 0.68rem;
+
+}
+
+.popular-1{
+    
+    background-image: url('../bi-5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position:center;
+}
+
+.popular-2{
+    
+    background-image: url('../bi-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position:center;
+
+}
+
+.popular-3{
+    
+    background-image: url('../bi-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position:center;
+
+}
+ /* end of popular section */
+
+/* begining of tags section */
+.blogs-tag-section {
+    margin-top: 9.2rem;
+}
+
+.tags-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.125rem;
+}
+
+.tag {
+    border:3px solid  #0D3767;
+    border-radius: 6.25rem;
+    padding: 0.687rem  0.68rem 1rem 1rem;
+    text-align:center;
+    white-space: nowrap;
+    width: fit-content;
+    justify-self: first baseline;
+    margin-right:0.5rem;
+    margin-bottom:1rem ;
+}
+
+.tag-photos{
+    margin-top:8.05rem;
+}
+
+.tag-photo{
+    display: inline-block;
+    width: 100%;
+}
+
+
+.tag-p {
+    margin-top: 0.94rem;
+    background-color: #151515;
+    padding: 2rem 1.625rem 1.625rem  2.35rem;
+    border-radius: 0.93rem;
+    
+
+}
+
+.tag-p p {
+    color:  #2DB68F;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.tag-p1 {
+    margin-top: 7.5rem;
+    color:  #0D3767;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.tag-p2 {
+    margin-top: 1.875rem;
+    color:   #151515;
+    font-size: 1.25rem;
+    font-family: futura Bk BT;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+/* begining of email input */
+
+.tag-form input {
+    width: 100%;
+    height:2.875rem;
+    border-radius: 6.25rem;
+    border: transparent;
+    background-color: #F7F7F7;
+    margin-top: 1.875rem;
+    padding: 0.75rem 0rem  0.625rem 1.39rem;
+    box-shadow:  rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+} 
+
+.tag-form button {
+    display: block;
+    margin:1.31rem  auto  6.56rem auto;
+    width: auto;
+    font-weight: 600;
+    border-radius: 6.25rem;
+    color: #0D3767;
+    font-size:1.25rem;
+    border: transparent;
+    border: 0.185rem solid #0D3767;
+    padding:0.68rem 2.23rem ;
+    text-align: center;
+    
+}
+    
+/*media query 760px */
+@media screen  and (min-width:760px){
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4.185rem;
+    } 
+
+    .blog-container {
+        min-width:70vw;
+    }
+    
+    .search-bar{
+        width: 50%;
+        margin-left: 23rem;
+
+    }
+
+    .top-blogs-container {
+        column-gap: 4.185rem;
+    }
+
+    .tag-form {
+        display:flex;
+        justify-content: center;
+        margin-top: 3.25rem;
+        margin-bottom: 15.68rem;
+    }
+
+    .tag-form input {
+        width: 60%;
+        margin: 0 ;
+        margin-right: 1.875rem;
+        
+    }
+
+    .tag-form button {
+        margin: 0;
+    }
+
+    .blog-vector {
+        margin-left: 21rem;
+     }
+        
+}
+/*media query 1200px */
+@media screen  and (min-width:1200px){
+    .blogs {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2.93rem;
+    } 
+
+    .search-bar {
+        width: 50%;
+        margin-left: 42.6rem;
+    }
+
+    .col-2-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3.125rem;
+    }
+
+    .popular-container {
+       
+        grid-auto-columns:35%;
+       column-gap: 4.43rem;
+    }
+    
+    .tag-form input {
+        width: 45%; 
+    }
+
+    .blog-title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:10rem;
+    }
+
+    .blog-vector {
+        margin-right: 19rem;
+     }
+
+    .blog-heading {
+        margin: 0;
+    }
+
+    .landing-section{
+        min-height: 30vh;
+    }
+}
+
+
+
+
+
+
+
+
+/*.Blog-page {
+    font-family: "Inter";
+}
+
+.blog-section {
+    position: relative;
+}
+
+.section-center {
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+.form-control {
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+    padding: 0;
+
+
+}
+
+.search-bar {
+    background: #D9D9D9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1' stroke-linecap='square' stroke-linejoin='bevel'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 13px center;
+    width: 100%;
+    height:2.4rem;
+    border-radius: 1.0rem;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 4px 9px 48px;
+}
+
+.blog-photos {
+width: 100%;
+margin-bottom:1.18rem ;
+}
+
+.single-blog {
+    margin-bottom: 1.25rem;
+}
+
+.single-blog h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #151515;
+    margin-bottom: 0.8rem;
+    
+}
+
+.single-blog p {
+    margin-bottom: 0.8rem;
+font-family: 'Futura Bk BT';
+font-weight: 400;
+font-style: italic;
+font-size: 1.25rem;
+line-height: 1.5rem;
+margin-bottom:0.8rem ;
+
+}
+
+.single-blog h4 {
+font-family: 'Futura Bk BT';
+font-size: 1rem;
+line-height: 1.19rem;
+margin-bottom:2.5rem ;
+
+}
+
+*/
