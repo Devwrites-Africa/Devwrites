@@ -14,6 +14,9 @@ const theme = createTheme();
 theme.typography.body2 = {
     fontSize: '18px',
     fontFamily: 'Futura Bk BT',
+    maxWidth: '500px',
+    margin: '0 auto',
+
 }
 
 theme.typography.h4 = {
@@ -35,7 +38,6 @@ const styles = {
         borderRadius: '10px'
     },
     card: {
-        width: '700px',
         margin: '0 auto',
         background: '#f5f5f5',
     },
@@ -79,9 +81,6 @@ const Testimonial = ()=> {
                         }
                     titleTypographyProps={styles.cardHeaderTitle}
                     title='Devwrites Africa'
-
-                    // subheaderTypographyProps={styles.subHeaderTitle}
-                    // subheader='Software Developer'
                 />
                 <CardContent>
                     <ThemeProvider theme={theme}>

@@ -1,37 +1,38 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DrawerComponent from "./DrawerComponent";
-import { 
-    AppBar, 
-    Tab, 
-    Tabs, 
-    Toolbar, 
+import {
+    AppBar,
+    Tab,
+    Tabs,
+    Toolbar,
     Button,
     useTheme,
-    useMediaQuery
+    useMediaQuery,
 } from "@mui/material";
 
-const Navbar = ()=> {
+const Navbar = () => {
     const theme = useTheme();
-    const mobileView = useMediaQuery(theme.breakpoints.down('md'))
+    const mobileView = useMediaQuery(theme.breakpoints.down("md"));
 
-     const styles = {
+    const styles = {
         tab: {
-           color: 'var(--purple)',
-           fontWeight: '700',
-           fontSize: '1.2rem',
-           textDecoration: 'capitalize'
+            color: "var(--purple)",
+            fontWeight: "700",
+            fontSize: "1.2rem",
+            textDecoration: "capitalize",
         },
-    }
-    
+    };
+
     return (
-        <div >
+        <div>
             <AppBar
-                sx={{background: '#F5F5F5'}}
+                sx={{ background: "#F5F5F5" }}
                 elevation={0}
-                position='relative'
+                position="relative"
             >
                 <Toolbar>
+                
                     <img src="./Images/Logo.png" alt="logo" className='logo' />
                         { mobileView ? (
                             <DrawerComponent />
@@ -48,14 +49,15 @@ const Navbar = ()=> {
                                 <Link to='/about'>About</Link>
                                 <Link to=''>Contributors</Link>
                                 <Link to='/blog'>Blog</Link>
-                                <Link to=''>Programs</Link>
+                                <Link to='/programs'>Programs</Link>
                             </div>
                         )}
+
 
                 </Toolbar>
             </AppBar>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
